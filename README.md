@@ -1,43 +1,32 @@
-# Personal Finance Management System
+# Personal Finance Manager (Terminal-Based)
 
-A streamlined and efficient application designed to help users track their personal finances, manage daily expenses, and maintain a balanced monthly budget. 
+A lightweight, terminal-based application written in C to help users track their personal finances during a single session. This project was developed to practice fundamental programming logic, control structures, and memory manipulation in C.
 
-This project focuses on structured data manipulation, efficient categorization of transactions, and robust data persistence.
+## 🚀 Features
 
-## 🛠 Project Structure
+* **Terminal Interface**: Simple and intuitive command-line menu.
+* **Income & Expense Tracking**: Quickly log incoming money and outgoing costs.
+* **Balance Calculation**: Automatically computes the current financial balance based on the inputs provided during the session.
+* **Runtime Execution**: Operates entirely in memory without the need for external databases or file persistence.
 
-* **/src**: Source code containing the core logic, categorized by modules (e.g., transactions, users, reports).
-* **/data**: Persistence files (e.g., CSVs or databases) used to store the transaction history and user records.
-* **/tests**: Automated test cases and mock data for system validation.
+## 🛠 Tech Stack
 
-## 🚀 Key Features
-
-* **Expense & Income Tracking**: Log daily transactions with dynamic categories.
-* **Budget Management**: Monitor monthly spending limits against actual expenses.
-* **Data Persistence**: Securely store and retrieve financial history without data loss between sessions.
-* **Financial Summaries**: Generate quick reports on financial health over custom periods.
-
-## 💻 Tech Stack
-
-* **Language**: [Insert Language, e.g., C / C++ / Python / Dart]
-* **Framework/Tools**: [Insert Tools, e.g., Flutter / GCC compiler]
-* **Data Storage**: [Insert Storage Method, e.g., Local File System (CSV) / SQLite]
+* **Language**: C
+* **Environment**: Terminal / Command Line
 
 ## ⚙️ Compilation and Execution
 
-[Adjust the instructions below based on your specific language. The example below is for a C/C++ environment:]
-
-To compile and run the project on a Linux environment using `gcc`:
+The entire project is contained within a single source file (`Projeto Final.c`). To compile and run it in a Linux or Windows terminal using GCC:
 
 ```bash
 # Clone the repository
 git clone [https://github.com/Luciano-Tadeu/Sistema-Financas-Pessoais.git](https://github.com/Luciano-Tadeu/Sistema-Financas-Pessoais.git)
 
-# Navigate to the source directory
-cd Sistema-Financas-Pessoais/src
+# Navigate to the repository folder
+cd Sistema-Financas-Pessoais
 
-# Compile the application
-gcc -o finance_manager main.c transactions.c data_handler.c -Wall
+# Compile the code (quotes are used due to the space in the filename)
+gcc "Projeto Final.c" -o financas -Wall
 
-# Run the system
-./finance_manager
+# Execute the application
+./financas
